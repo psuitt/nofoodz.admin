@@ -1,0 +1,22 @@
+<md-content layout-padding>
+    <form name="userForm">
+        <div layout-gt-sm="row">
+            <md-input-container class="md-block" flex-gt-sm>
+                <label>Username</label>
+                <input md-input [(ngModel)]="user.username">
+            </md-input-container>
+        </div>
+        <div layout-gt-sm="row">
+            <md-input-container class="md-block" flex-gt-sm>
+                <label>Password</label>
+                <input md-input [(ngModel)]="user.password">
+            </md-input-container>
+        </div>
+        <div layout-gt-sm="row">
+            <button md-raised-button class="md-raised md-primary" (click)="login()">Login</button>
+        </div>
+        <div layout-gt-sm="row">
+            <button md-raised-button class="md-raised md-primary" (click)="logout()">Logout</button>
+        </div>
+    </form>
+</md-content>
